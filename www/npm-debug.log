@@ -1,0 +1,136 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'angularjs' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'angularjs', null ]
+5 verbose cache add name=undefined spec="angularjs" args=["angularjs",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'angularjs',
+6 verbose parsed url   path: 'angularjs',
+6 verbose parsed url   href: 'angularjs' }
+7 silly lockFile c7872ea9-angularjs angularjs
+8 verbose lock angularjs /Users/brubaker/.npm/c7872ea9-angularjs.lock
+9 silly lockFile c7872ea9-angularjs angularjs
+10 silly lockFile c7872ea9-angularjs angularjs
+11 verbose addNamed [ 'angularjs', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 3021ac88-angularjs angularjs@
+14 verbose lock angularjs@ /Users/brubaker/.npm/3021ac88-angularjs.lock
+15 silly addNameRange { name: 'angularjs', range: '*', hasData: false }
+16 verbose request where is /angularjs
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 424d70b244a7b3f0
+19 verbose url raw /angularjs
+20 verbose url resolving [ 'https://registry.npmjs.org/', './angularjs' ]
+21 verbose url resolved https://registry.npmjs.org/angularjs
+22 verbose request where is https://registry.npmjs.org/angularjs
+23 info trying registry request attempt 1 at 18:19:09
+24 verbose etag "5L115LGSWBMU35YCLFU8W9HCC"
+25 http GET https://registry.npmjs.org/angularjs
+26 http 304 https://registry.npmjs.org/angularjs
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Mon, 17 Nov 2014 23:19:09 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Mon, 17 Nov 2014 23:19:09 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"5L115LGSWBMU35YCLFU8W9HCC"',
+27 silly registry.get     age: '13',
+27 silly registry.get     'x-served-by': 'cache-dfw1824-DFW',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1416266349.497339,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/angularjs from cache
+29 silly addNameRange number 2 { name: 'angularjs', range: '*', hasData: true }
+30 silly addNameRange versions [ 'angularjs', [ '0.0.1' ] ]
+31 verbose addNamed [ 'angularjs', '0.0.1' ]
+32 verbose addNamed [ '0.0.1', '0.0.1' ]
+33 silly lockFile b1b1d806-angularjs-0-0-1 angularjs@0.0.1
+34 verbose lock angularjs@0.0.1 /Users/brubaker/.npm/b1b1d806-angularjs-0-0-1.lock
+35 silly lockFile b1b1d806-angularjs-0-0-1 angularjs@0.0.1
+36 silly lockFile b1b1d806-angularjs-0-0-1 angularjs@0.0.1
+37 silly lockFile 3021ac88-angularjs angularjs@
+38 silly lockFile 3021ac88-angularjs angularjs@
+39 silly resolved [ { name: 'angularjs',
+39 silly resolved     version: '0.0.1',
+39 silly resolved     description: 'Browerify angularjs shim',
+39 silly resolved     main: 'index.js',
+39 silly resolved     scripts: { test: 'node_module/.bin/mocha' },
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'https://github.com/eugeneware/angularjs.git' },
+39 silly resolved     keywords:
+39 silly resolved      [ 'angularjs',
+39 silly resolved        'browserify',
+39 silly resolved        'angular',
+39 silly resolved        'angular-js',
+39 silly resolved        'shim',
+39 silly resolved        'bower',
+39 silly resolved        'debowerify' ],
+39 silly resolved     author: { name: 'Eugene Ware', email: 'eugene@noblesamurai.com' },
+39 silly resolved     license: 'BSD-3-Clause',
+39 silly resolved     bugs: { url: 'https://github.com/eugeneware/angularjs/issues' },
+39 silly resolved     devDependencies: { 'expect.js': '~0.2.0', mocha: '~1.12.0' },
+39 silly resolved     _id: 'angularjs@0.0.1',
+39 silly resolved     dist:
+39 silly resolved      { shasum: '496f50c7141515e741ea976de891def0838b3f19',
+39 silly resolved        tarball: 'http://registry.npmjs.org/angularjs/-/angularjs-0.0.1.tgz' },
+39 silly resolved     _from: 'angularjs@',
+39 silly resolved     _npmVersion: '1.3.8',
+39 silly resolved     _npmUser: { name: 'eugeneware', email: 'eugene@noblesamurai.com' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     directories: {},
+39 silly resolved     _shasum: '496f50c7141515e741ea976de891def0838b3f19',
+39 silly resolved     _resolved: 'https://registry.npmjs.org/angularjs/-/angularjs-0.0.1.tgz',
+39 silly resolved     readme: 'ERROR: No README data found!',
+39 silly resolved     homepage: 'https://github.com/eugeneware/angularjs' } ]
+40 info install angularjs@0.0.1 into /usr/local/lib
+41 info installOne angularjs@0.0.1
+42 verbose lib/node_modules/angularjs unbuild
+43 verbose tar unpack /Users/brubaker/.npm/angularjs/0.0.1/package.tgz
+44 silly lockFile ddd89dc5-local-lib-node-modules-angularjs tar:///usr/local/lib/node_modules/angularjs
+45 verbose lock tar:///usr/local/lib/node_modules/angularjs /Users/brubaker/.npm/ddd89dc5-local-lib-node-modules-angularjs.lock
+46 silly lockFile a1d5fa57--npm-angularjs-0-0-1-package-tgz tar:///Users/brubaker/.npm/angularjs/0.0.1/package.tgz
+47 verbose lock tar:///Users/brubaker/.npm/angularjs/0.0.1/package.tgz /Users/brubaker/.npm/a1d5fa57--npm-angularjs-0-0-1-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/angularjs'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/angularjs']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/angularjs',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/angularjs',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:107:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "-g" "angularjs"
+53 error cwd /Users/brubaker/Desktop/perambulator/www
+54 error node -v v0.10.32
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/angularjs
+57 error fstream_path /usr/local/lib/node_modules/angularjs
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/angularjs'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose exit [ 3, true ]

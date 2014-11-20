@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <style>
+  .arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  vertical-align: center;
+  border-bottom: 20px solid black;
+  margin-left:auto;margin-right:auto
+}
+</style>
+  <body ng-app="perambulatorApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div style="width:100%;vertical-align:center;">
+    <div class="arrow-up"></div>
+  </span>
+    <!-- Add your site or application content here -->
+    <div class="container">
+      <div class="header" ng-controller="MainCtrl">
+        1. Aim telephone at point desired, press 1.<br>
+        2. Walk to another location, re-aim at same point, press 2<br>
+        3. The distances will be calculated and shown below<br>
+        <table style="padding:20px;width:100%">
+          <tr><td> | | </td><td>--</td><td>//<td>
+          <tr><td><input type="number" ng-model="Lat1" ng-change="calculate()"  style="width:50px"></input></td>
+            <td><input type="number" ng-model="Long1" ng-change="calculate()" style="width:50px"></input></td><td>
+            <input type="number" ng-model="Heading1" ng-change="calculate()" style="width:50px"></input></td><td style="float:right"><button ng-click="getDimension1()" style="width:50px;height:50px">1</button></tr>
+          <tr><td><input type="number" ng-model="Lat2" ng-change="calculate()" style="width:50px"></input></td><td><input type="number" ng-model="Long2" ng-change="calculate()" style="width:50px"></input></td><td><input type="number" ng-model="Heading2" ng-change="calculate()" style="width:50px"></input></td><td style="float:right"><button ng-click="getDimension2()"  style="width:50px;height:50px">2</button></tr>
+          <tr><td></td><td></td><td></td></tr>
+        </table>
+
+        <div>Key:<br>
+           ||  latitude<br>
+           --  longitud <br>
+           //  heading <br>
+        </div>
+        <div>
+          <table>
+            <tr><td>a</td><td>{{a}} m</td></tr>
+            <tr><td>b</td><td>{{b}} m</td></tr>
+            <tr><td>c</td><td>{{c}} m</td></tr>
+        </div>
+    </div>
+
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+         <script src="scripts/angular.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="cordova.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
