@@ -20,7 +20,8 @@ angular.module('perambulatorApp')
     	$scope.a="";
     	$scope.b="";
     	$scope.c="";
-
+		$scope.mu="";
+		$scope.lambda="";
         var onSuccessH = function(heading) {
     	$scope.Heading1=heading.magneticHeading;
   /* alert('Latitude: '          + position.coords.latitude          + '\n' +
@@ -98,11 +99,11 @@ angular.module('perambulatorApp')
       var LatScaleFactor=Math.cosd(($scope.Lat1+$scope.Lat2)/2);
       var KMperLonDegree=EarthCircEquator/360*LatScaleFactor;
       var KMperLatDegree=EarthCircPoles/360;
-      debugger;
+      //debugger;
       var ss1=delta_longitude*KMperLonDegree;
       var ss2=delta_latitude*KMperLatDegree;
 
-      var a=Math.sqrt(Math.pow(ss1,2)+Math.pow(ss2,2));
+      /*var a=Math.sqrt(Math.pow(ss1,2)+Math.pow(ss2,2));
       var aa=Math.abs($scope.Heading1-$scope.Heading2);
     	var theta=Math.asind(ss2/a);
     	var phi=180-90-theta;
@@ -115,7 +116,18 @@ angular.module('perambulatorApp')
     	$scope.a=a;
     	$scope.b=b;
     	$scope.c=c;
-
+		*/
+		
+		var x1 = Math.sind($scope.Heading1);
+		var x2 = Math.sind($scope.Heading2);
+		var y1= Math.cosd($scope.Heading1);
+		var y2 = Math.cosd($scope.Heading2);
+		
+		var numlambda = -y2*ss1+x2*ss2;
+		var nummu = -y1*ss1+x1*ss2;
+		var den = -x1*y2+x2*y1;
+		$scope.mu = nummu/den;
+		$scope.lambda = numlambda/den;
     }
     $scope.getDimension1 = function() {
 		navigator.geolocation.getCurrentPosition(onSuccess, onError);

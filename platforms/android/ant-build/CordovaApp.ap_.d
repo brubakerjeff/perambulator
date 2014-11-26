@@ -49,6 +49,7 @@
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/images/yeoman.png \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/img/logo.png \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/js/index.js \
+/Users/brubaker/Desktop/perambulator/platforms/android/assets/www/js/math.js \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation/www \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation/www/compass.js \
@@ -57,6 +58,7 @@
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/scripts/angular.js \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/scripts/app.js \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/scripts/controllers \
+/Users/brubaker/Desktop/perambulator/platforms/android/assets/www/scripts/math.js \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/scripts/controllers/about.js \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/scripts/controllers/main.js \
 /Users/brubaker/Desktop/perambulator/platforms/android/assets/www/styles/main.css \
