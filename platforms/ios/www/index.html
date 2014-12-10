@@ -36,14 +36,15 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header" ng-controller="MainCtrl">
-        1. Aim telephone at point desired, press 1.<br>
-        2. Walk to another location, re-aim at same point, press 2<br>
+        1. Aim telephone at point desired, press 1, press 1 again when heading converges.<br>
+        2. Walk to another location, re-aim at same point, press 2, press 2 again when heading converges.<br>
         3. The distances will be calculated and shown below<br>
         <table style="padding:20px;width:100%">
           <tr><td> | | </td><td>--</td><td>//<td>
           <tr><td><input type="number" ng-model="Lat1" ng-change="calculate()"  style="width:50px"></input></td>
             <td><input type="number" ng-model="Long1" ng-change="calculate()" style="width:50px"></input></td><td>
             <input type="number" ng-model="Heading1" ng-change="calculate()" style="width:50px"></input></td><td style="float:right"><button ng-click="getDimension1()" style="width:50px;height:50px">1</button></tr>
+            <tr><td>&nbsp;</td></tr>
           <tr><td><input type="number" ng-model="Lat2" ng-change="calculate()" style="width:50px"></input></td><td><input type="number" ng-model="Long2" ng-change="calculate()" style="width:50px"></input></td><td><input type="number" ng-model="Heading2" ng-change="calculate()" style="width:50px"></input></td><td style="float:right"><button ng-click="getDimension2()"  style="width:50px;height:50px">2</button></tr>
           <tr><td></td><td></td><td></td></tr>
         </table>
@@ -55,9 +56,9 @@
         </div>
         <div>
           <table>
-            <tr><td>a</td><td>{{a}} m</td></tr>
-            <tr><td>b</td><td>{{b}} m</td></tr>
-            <tr><td>c</td><td>{{c}} m</td></tr>
+            <tr><td>&lambda;Z<sub>1</sub></td><td>{{lambda}} m</td></tr>
+            <tr><td>&mu;Z<sub>2</sub></td><td>{{mu}} m</td></tr>
+
         </div>
     </div>
 
@@ -77,6 +78,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
          <script src="scripts/angular.js"></script>
         <script src="scripts/app.js"></script>
+		 <script src="scripts/math.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="cordova.js"></script>
         <!-- endbuild -->

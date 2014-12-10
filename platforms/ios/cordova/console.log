@@ -1,0 +1,17 @@
+2014-12-09 20:43:13.991 PerAmbulator[4773:3065875] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/brubaker/Library/Developer/CoreSimulator/Devices/9F48911B-38D9-45D0-98EB-81DD27BE87D2/data/Containers/Data/Application/551B5523-559C-43F1-BBF9-05DDB068BA3A/Library/Cookies/Cookies.binarycookies
+2014-12-09 20:43:14.983 PerAmbulator[4773:3065875] Apache Cordova native platform version 3.7.0 is starting.
+2014-12-09 20:43:14.983 PerAmbulator[4773:3065875] Multi-tasking -> Device: YES, App: YES
+2014-12-09 20:43:15.007 PerAmbulator[4773:3065875] Unlimited access to network resources
+2014-12-09 20:43:15.024 PerAmbulator[4773:3065875] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2014-12-09 20:43:17.186 PerAmbulator[4773:3065875] Resetting plugins due to page load.
+2014-12-09 20:43:17.519 PerAmbulator[4773:3065875] Finished load of: file:///Users/brubaker/Library/Developer/CoreSimulator/Devices/9F48911B-38D9-45D0-98EB-81DD27BE87D2/data/Containers/Bundle/Application/1ABB9AFE-12D2-4BB4-9426-7099E8D2B7CD/PerAmbulator.app/www/index.html
+2014-12-09 20:43:41.867 PerAmbulator[4773:3065875] THREAD WARNING: ['Geolocation'] took '11.204590' ms. Plugin should use a background thread.
+2014-12-09 20:43:44.284 PerAmbulator[4773:3065875] locationManager::didFailWithError (null)
+2014-12-09 20:44:06.478 PerAmbulator[4773:3065875] locationManager::didFailWithError (null)
